@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "eagle-eye"
+name = "eagle-eye-qds"
 version = "0.1.0"
 description = "Quantum-inspired cyber-threat detection for teleportation-based Quantum Digital Signatures (SIH PS 26141)"
 readme = "README.md"
 requires-python = ">=3.10"
-license = {text = "Apache-2.0"}
+license = "Apache-2.0"
 authors = [
     {name = "Eagle-Eye Team"}
 ]
