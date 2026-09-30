@@ -88,4 +88,5 @@ pip install -r requirements.txt
 ### 4. Launching the Security Dashboard
 ```powershell
 .\.venv\Scripts\uvicorn src.dashboard.app:app --host 127.0.0.1 --port 8000 --reload
+
 ```
