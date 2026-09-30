@@ -1,5 +1,9 @@
 # Eagle-Eye: Quantum-Inspired Cyber-Threat Detection for Teleportation-Based Quantum Digital Signatures (QDS)
 
+[![PyPI version](https://img.shields.io/pypi/v/eagle-eye-qds.svg)](https://pypi.org/project/eagle-eye-qds/)
+[![Python versions](https://img.shields.io/pypi/pyversions/eagle-eye-qds.svg)](https://pypi.org/project/eagle-eye-qds/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 > **SIH PS 26141** | Smart India Hackathon  
 > Deterministic, explainable security framework for teleportation-based QDS with zero AI/ML reliance.
 
@@ -69,7 +73,16 @@ eagle-eye/
 ## Quickstart
 
 ### 1. Installation
+
+#### Option A: Install from PyPI
+```bash
+pip install eagle-eye-qds
+```
+
+#### Option B: Local Development Setup
 ```powershell
+git clone https://github.com/vibeee45/Eagle-Eye.git
+cd Eagle-Eye
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
