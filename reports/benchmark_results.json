@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "evaluation_date": "2026-09-30",
+    "seeds_evaluated": 30,
+    "total_decisions_evaluated": 630,
+    "total_duration_seconds": 2.03,
+    "policy_version": "1.0.0"
+  },
+  "primary_metrics": {
+    "honest_acceptance_rate": 1.0,
+    "frr_false_rejection_rate": 0.0,
+    "overall_attack_detection_rate": 1.0,
+    "far_false_acceptance_rate": 0.0,
+    "replay_rejection_rate": 1.0,
+    "evidence_completeness": 1.0,
+    "rollback_success_rate": 1.0
+  },
+  "per_class_detection_rates": {
+    "Corpus_F_Forgery": 1.0,
+    "Corpus_I_Impersonation": 1.0,
+    "Corpus_R_Replay": 1.0,
+    "Corpus_C_Channel_Manipulation": 1.0,
+    "Corpus_E_Edge_Cases": 1.0
+  },
+  "performance": {
+    "mean_latency_ms": 0.153,
+    "p95_latency_ms": 0.479,
+    "throughput_verifications_per_second": 310.21
+  },
+  "baseline_comparisons": {
+    "Baseline_1_Fixed_QBER_Only": {
+      "detection_rate": 0.0625,
+      "far": 0.9375,
+      "note": "Fails to detect replays, identity spoofing, and message payload tampering"
+    },
+    "Baseline_2_QBER_Plus_TVD": {
+      "detection_rate": 0.0625,
+      "far": 0.9375,
+      "note": "Detects quantum distortion but blind to classical tampering and replay attacks"
+    },
+    "Eagle_Eye_Full_Framework": {
+      "detection_rate": 1.0,
+      "far": 0.0,
+      "note": "Holistic defense combining guards, freshness, multi-statistic SPRT/QBER/TVD, and signed lifecycle"
+    }
+  },
+  "target_gate_status": {
+    "replay_rejection_target_100pct": true,
+    "honest_acceptance_target_gte_95pct": true,
+    "attack_detection_target_gte_90pct": true,
+    "far_target_lte_5pct": true,
+    "latency_target_lte_1s": true,
+    "evidence_completeness_100pct": true,
+    "rollback_success_100pct": true
+  }
+}
